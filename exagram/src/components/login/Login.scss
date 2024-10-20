@@ -1,0 +1,85 @@
+@import '../../styles/colors.scss';
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.login-form,
+.register-prompt {
+  width: 100%;
+  max-width: 400px; /* 统一设置最大宽度 */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-title {
+  color: $primary-color;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.login-input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.login-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-input {
+  width: 100%; /* 输入框和按钮保持一样宽 */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* 确保内外边距计算正确 */
+}
+
+.login-button {
+  width: 100%; /* 与输入框一致 */
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color:$primary-color;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-sizing: border-box; /* 确保内外边距计算正确 */
+}
+
+.login-button:hover {
+  background-color:$secondary-color;
+}
+
+.login-error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.register-prompt {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+.register-link:hover {
+  text-decoration: underline;
+}

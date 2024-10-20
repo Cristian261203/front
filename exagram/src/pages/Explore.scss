@@ -1,0 +1,36 @@
+.explore-page {
+    display: flex;
+
+   
+
+    .explore-content {
+        margin-top: 4vh;
+        margin-left: 24vw; // 添加左侧边距，避免紧贴 Navbar
+        margin-right: 8vw; // 添加右侧边距
+        width: 100%; // 扣除 navbar 和左右边距的总宽度
+    }
+
+    .post-row {
+        display: flex;
+        justify-content: space-between; // 在一行内均匀分布五个帖子
+        margin-bottom: 16px;
+    }
+
+    .custom-post {
+        flex: 1;
+        max-width: 18%; // 每个帖子占据行的五分之一宽度
+        padding-top: 18%; // 保持正方形比例
+        position: relative; // 让图片覆盖整个帖子区域
+        overflow: hidden; // 隐藏超出容器的图片部分
+        border-radius: 8px;
+        
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; // 图片宽度占满帖子容器
+            height: 100%; // 图片高度占满帖子容器
+            object-fit: cover; // 确保图片覆盖整个容器，同时保持图片的宽高比
+        }
+    }
+}

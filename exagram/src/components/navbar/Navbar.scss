@@ -1,0 +1,52 @@
+@import '../../styles/colors.scss';
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between; 
+    background-color: #ffffff;
+    padding: 0px 32px;
+    border-right: 1px solid #ccc;
+    height: 100dvh;
+    width: 8vw;
+
+}
+
+.logoName {
+    margin: 32px 16px;
+    align-items: center;
+    color: $primary-color;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    margin: 24px 16px;
+    cursor: pointer;
+    text-align: center;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.navItem:hover {
+    color: #ff4d00; /* 悬停时的颜色变化 */
+}
+
+.navIcon {
+    font-size: 32px;
+    margin-right: 10px; /* 图标和文字之间的间距 */
+}
+
+.navMore {
+    margin-top: auto; 
+}
+.navAvatar {
+    width: 24px; /* 设置合适的宽度 */
+    height: 24px; /* 设置合适的高度 */
+    border-radius: 50%; /* 使头像变为圆形 */
+    object-fit: cover; /* 确保图片在容器中正确显示 */
+    margin-right: 8px; /* 如果需要，可以添加与文本之间的间距 */
+    border: 2px solid black; /* 添加黑色描边 */
+
+}

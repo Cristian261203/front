@@ -1,0 +1,26 @@
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.post {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 16vw;
+    position: relative;
+    padding-top: 100%; /* This makes the container a square */
+    background-color: #fff; /* Set the background color to white */
+}
+
+.post-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

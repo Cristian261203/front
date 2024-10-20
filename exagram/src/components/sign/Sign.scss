@@ -1,0 +1,77 @@
+@import '../../styles/colors.scss';
+
+.sign-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $background-color;
+}
+
+.sign-box,
+.login-prompt {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sign-title {
+  color: $primary-color;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sign-button {
+  width: 100%;
+  padding: 10px;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.sign-button:hover {
+  background-color: darken($secondary-color, 10%);
+}
+
+.login-prompt {
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.login-link {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
